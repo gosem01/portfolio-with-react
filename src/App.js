@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Project from './components/Project';
 
 function App() {
+  const [showProjects, setShowProjects] = useState(false);
+
   const projects = [
     {
       title: 'Turn Up',
@@ -20,6 +22,24 @@ function App() {
       projectUrl: 'https://example.com/project2',
     },
   ];
+
+  useEffect(() => {
+    if (window.location.hash === '#portfolio') {
+      setShowProjects(true);
+    }
+
+    window.onhashchange = () => {
+      if (window.location.hash === '#portfolio') {
+        setShowProjects(true);
+      } else {
+        setShowProjects(false);
+      }
+    };
+  }, []);
+
+  if (!showProjects) {
+    return null;
+  }
 
   return (
     <>
