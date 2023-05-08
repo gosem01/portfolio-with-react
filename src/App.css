@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  color: white;
+  background-color: blue;
+}
+
+#about {
+  color: white;
+  justify-content: left;
+}
+
+footer {
+  color: white;
+  background-color: blue;
+}
