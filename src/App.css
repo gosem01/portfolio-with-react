@@ -113,3 +113,101 @@ footer p {
   font-style: italic;
   font-size: large;
 }
+
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+button[type="submit"] {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0058a3;
+} */
+
+form {
+  margin: 50px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  /* justify-content: left; */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* box-sizing: border-box; */
+
+  /* width: 200px; */
+  height: 30px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+  display: block;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+form input[type="submit"]:focus {
+  outline: none;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form .form-group label {
+  justify-content: left;
+}
+
+form #message {
+  height: 200px;
+}
