@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import './App.css';
-import Navigation from './components/Navigation';
+// import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Project from './components/Project';
 
@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      setShowAbout(hash === '#about');
+      setShowAbout(hash === '#about' || hash === '');
       setShowProjects(hash === '#portfolio');
       setShowContact(hash === '#contact');
     };
